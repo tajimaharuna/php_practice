@@ -1,0 +1,44 @@
+// Controller
+Controllerは、Laravelの中枢的な役割を担う。
+データをやり取りしたり出力するデータを生成するところ。
+ControllerとViewのみを使ったコンテンツの作成・・・データベースを使わないもの。
+例）株などのリアルタイムでどこかからデータをとって更新が必要なもの
+ControllerとModel、Viewが必要なコンテンツの作成・・・データベースが必要なもの。
+
+// Action
+Controller内に実装した関数のこと。
+ユーザーから来たアクセスをRoutingが受け取り、Contoroller内にある適したActionが処理をする。
+
+// Routing
+アクセスを受け取るところ。その後ControllerのActionに渡す。
+自動に受け取るの？受け取りのための設定は必要？
+
+//URLとControllerやActionを紐付ける機能を何といいますか？
+routing
+
+//あなたが考える、group化をすることのメリットを考えてみてください。
+routingにより紐づけられたActionを管理しやすくする為。
+複雑化したActionの整理。
+
+//？larabelのActionを作る時の.と/の違いは？？//
+public function add()
+    {
+        return view('admin.profile.create');
+    }
+
+    public function create()
+    {
+        return redirect('admin/profile/create');
+    }
+
+//viewとは
+Controllerの指示によってアクセスした人のブラウザに表示するデータを生成する場所。
+出力するHTMLファイル。
+larabelではbladeというテンプレートを使用する。
+
+//Bladeとは
+データベースから取得したデータをHTML組み込む必要があるが、BladeにはViewに出力する元
+となるものが記述してある。
+いつも通りHTMLを記述していけば良いという優れもの。
+
+

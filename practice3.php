@@ -11,10 +11,10 @@ function plus($a,$b){
 }
 echo plus(4,6);
 
+//3.
 $arr = array(1,3,5,7,9);
 echo array_product($arr);
 
-//3.
 function alltimes($arr){
     $result = 1;
     $num = array(1,3,5,7,9);
@@ -82,6 +82,7 @@ echo mktime(date('H'),date('i'),date('s'),date('n'),date('j'),date('Y'));
 echo "\n";
 
 echo time();
+
 
 ?>
 
